@@ -1,17 +1,19 @@
 import React from "react";
 import { Provider } from "react-redux";
+import { ThemeProvider } from "styled-components";
 import store from "../store";
 import DevTools from "./DevTools";
 import StyledContainer from "../components/StyledContainer";
+import theme from "../constants/theme";
 
 const Root = () => {
     return (
         <Provider store={store}>
-            <div>
+            <ThemeProvider theme={theme}>
                 <StyledContainer>
                     <DevTools />
                 </StyledContainer>
-            </div>
+            </ThemeProvider>
         </Provider>
     )
 }
