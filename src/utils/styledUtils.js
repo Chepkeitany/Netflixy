@@ -3,7 +3,7 @@ import { css } from "styled-components";
 // md -> medium devices
 // lg -> large devices
 // xl -> extra large devices
-export const devices = {
+const devices = {
   sm: (...args) => css`
     @media (min-width: 576px) {
       ${css(...args)}
@@ -25,3 +25,5 @@ export const devices = {
     }
   `
 };
+
+export default devices;
