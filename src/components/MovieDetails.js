@@ -1,11 +1,14 @@
 import React from "react";
 import StyledHeader from "./StyledHeader";
 import FontAwesomeIcon from "./FontAwesomeIcon";
+import StyledHeaderLink from "./StyledHeaderLink";
 
 const MovieDetails = () => {
   return (
     <StyledHeader>
-      <FontAwesomeIcon icon="chevron-left" text="Go back" />
+      <StyledHeaderLink>
+        <FontAwesomeIcon icon="chevron-left" text="Go back" />
+      </StyledHeaderLink>
     </StyledHeader>
   );
 };
